@@ -1,0 +1,141 @@
+
+
+
+<html>
+
+<head> 
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Century Gothic;
+            margin: 0;
+            padding: 0;
+        }
+
+
+       body
+       {
+       background-image: url(../static/a2.jpg);
+
+       height:100vh;
+       background-position:center;
+       overflow:hidden;
+       background-size: cover;
+       }
+
+        input[type=text],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+            top:20%;
+        }
+        .div1 {
+          width: 300px;
+          height: 600px;
+          border: 5px solid black;
+          box-sizing: border-box;
+        }
+
+        
+        
+
+        
+
+
+        label {
+            padding: 10px;
+            display: inline-block;
+            
+        }
+
+        input[type=submit] {
+
+            background-color: #000000;
+            border: none;
+            text-decoration: none;
+            color: #f2f2f2;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: 0.6s ease;
+            width: 100%;
+            cursor: pointer;
+            float: left;
+            top:20%;
+            font-size:25px;
+        }
+
+        input[type=submit]:hover {
+            background-color: #808080;
+        }
+
+        .container {
+
+            
+            background-color: Gainsboro;
+            padding: 30px;
+            /* display: flex;
+            flex-wrap:wrap align-items:center margin-right:auto white-space:nowrap width:50% white-space:nowrap align-items: center;*/
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-55%, -55%);
+            text-align: left;
+            width:30%;
+            
+        }
+        .double {border-style: double;}
+        
+    </style>
+    
+     
+</head>
+
+<body>
+
+
+      <header>
+        <div id="form-wrapper style=" max-width:500px:margin:auto;">
+        
+            <div class="container div1 double" >
+                <form action="/login" method="post">
+                    <p style="font-size:27px">
+                    <label for="Forest Density">Forest Density </label>
+                    
+                    <select name="s" style="font-size:24px">
+                    <option values="High">High<option>
+                    <option values="Low">Low<option>
+                    <option values="Medium">Medium<option>
+                    </select></p>
+                    <br/>
+                    
+                    <p style="font-size:25px"> Relative Humidity </p>
+                    <p> <input type="text" name="rh" /></p>
+                    <p style="font-size:25px"> Slope</p>
+                    <p> <input type="text" name="sp" /></p>
+                    <p style="font-size:25px"> Snow Density </p>
+                    <p> <input type="text" name="sd" /></p>
+                    <p style="font-size:25px"> Air Temperature</p>
+                    <p> <input type="text" name="at" /></p>
+                    <p style="font-size:25px"> Wind </p>
+                    <p> <input type="text" name="wd" /></p><br/>
+                    
+                    <p > <input type="submit" value="Submit" /></p><br/>
+                    </p>
+                </form>
+                <br/>
+                <br/>
+                <i><center><b style="font-size:25px;color:black">{{y}}</b></center></i>
+                
+            
+            </div>
+        </div>
+    </header>
+    
+</body>
+
+</html>
+
+"""
